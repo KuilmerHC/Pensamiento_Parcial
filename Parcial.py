@@ -8,9 +8,6 @@ total_ventas = 0
 mayor_pedido = 0
 
 
-
-
-
 for i in range (num_pedidos):
     print(f"Pedido #{i + 1}" )
     nombre = input("Ingrese el nombre de cliente: ")
@@ -19,10 +16,7 @@ for i in range (num_pedidos):
     pedido = [nombre, valor_total, estado]
     lista_pedidos.append(pedido)    
     
-    
-print(lista_pedidos)
-
-
+ 
 for i in range (0, num_pedidos):
     if (lista_pedidos[i][2] == "enviado"):
         p_enviados += 1
